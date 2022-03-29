@@ -1,0 +1,16 @@
+[
+  {
+    "id": "dd0af7fc-fc2e-40cb-9d5e-36c51e134e11",
+    "name": "ATS",
+    "releaseYear": 2021,
+    "avaliable": true,
+    "gasAvaliable": true
+  },
+  {
+    "id": "f1920cf7-5915-442d-be99-e503c0ae9e5e",
+    "name": "Roadster",
+    "releaseYear": 2021,
+    "avaliable": true,
+    "gasAvaliable": true
+  }
+]
