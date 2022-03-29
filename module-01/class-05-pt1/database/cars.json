@@ -1,0 +1,16 @@
+[
+  {
+    "id": "6a88d81e-e4e7-4090-ba37-d54051a96c85",
+    "name": "Wrangler",
+    "releaseYear": 2021,
+    "avaliable": true,
+    "gasAvaliable": true
+  },
+  {
+    "id": "5f8c6023-5194-4e70-ad3b-582716eab3ce",
+    "name": "A8",
+    "releaseYear": 2022,
+    "avaliable": true,
+    "gasAvaliable": true
+  }
+]
