@@ -1,0 +1,17 @@
+{
+  "name": "03-cluster-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "logFile": "cat log.txt | grep 29542 | wc -l",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autocannon": "^7.9.0"
+  }
+}
