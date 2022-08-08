@@ -1,0 +1,16 @@
+{
+  "name": "class01-error-handling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-server-error.js",
+  "type": "module",
+  "scripts": {
+    "start1": "node 1-server-error.js",
+    "start2": "node 2-system-error.js",
+    "exec": "curl -i -X POST -d '{}' localhost:5001",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
