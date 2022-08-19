@@ -1,0 +1,29 @@
+^\d{3}.\d{3}.\d{3}-\d{2}$
+
+123.123.123-23
+563.234.123-53
+242.351.234-34
+
+replace [.-] - vazio
+
+replate ^(\w+),\s(\w+)$
+
+{firstName: "Erick", lastName: "Wendel"}
+{firstName: "Laila", lastName: "Gome"}
+{firstName: "Jose", lastName: "John"}
+
+por {firstName: "$2", lastName: "$1"}
+
+replace: \[(.*?)\]\(([http|https].*?)\)
+
+O [Erick Wendel](https://erickwendel.com) faz cursos no [YouTube](https://youtube.com/erickwendel) 
+
+E você pode pesquisar no [Google](https://google.com/erickwendel) ou
+[Instagram](https://instagram.com)
+
+resultado: 
+
+O <a href="https://erickwendel.com">Erick Wendel</a> faz cursos no <a href="https://youtube.com/erickwendel">YouTube</a> 
+
+E você pode pesquisar no <a href="https://google.com/erickwendel">Google</a> ou
+<a href="https://instagram.com">Instagram</a>
