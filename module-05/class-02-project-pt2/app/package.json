@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "npx mocha -w --parallel **/**/*.test.js",
-    "test:cov": "npx nyc npx mocha --parallel **/**/*test.js",
-    "seed": "node ./seed"
+    "test": "npx mocha -w --parallel test/*.test.js",
+    "test:cov": "npx nyc npx mocha --parallel test/*.test.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +17,7 @@
     "nyc": "^15.1.0"
   },
   "dependencies": {
-    "pdf-parse": "^1.1.1"
+    "pdf-parse": "^1.1.1",
+    "safe-regex": "^2.1.1"
   }
 }
