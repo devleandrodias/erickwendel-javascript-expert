@@ -42,6 +42,7 @@ import DateUtil from "./index.js";
   const date = "";
   const expected = { error: "Your text is empty" };
   const result = DateUtil.formatString(date);
+
   deepStrictEqual(result, expected);
 }
 
@@ -52,8 +53,8 @@ import DateUtil from "./index.js";
   };
 
   const expected = { error: `The format ${data.format} is not avaliable yet` };
-
   const result = DateUtil.formatString(data.value, data.format);
+
   deepStrictEqual(result, expected);
 }
 
@@ -64,12 +65,11 @@ import DateUtil from "./index.js";
   };
 
   const expectedFormat = "dd/M/yyyy";
-
   const expected = {
     error: `The format ${expectedFormat} is not avaliable yet`,
   };
-
   const result = DateUtil.formatString(data.value, data.format, expectedFormat);
+
   deepStrictEqual(result, expected);
 }
 
@@ -79,10 +79,61 @@ import DateUtil from "./index.js";
     format: "yyyy-mm-dd",
   };
 
-  const expectedFormat = "dd/M/yyyy";
-
-  const expected = "01-01-1990";
-
+  const expectedFormat = "yyyy-mm-dd";
+  const expected = "1990-01-01";
   const result = DateUtil.formatString(data.value, data.format, expectedFormat);
+
+  deepStrictEqual(result, expected);
+}
+
+{
+  const data = {
+    value: "1990-01-01",
+    format: "yyyy-mm-dd",
+  };
+
+  const expectedFormat = "dd-mm-yyyy";
+  const expected = "01-01-1990";
+  const result = DateUtil.formatString(data.value, data.format, expectedFormat);
+
+  deepStrictEqual(result, expected);
+}
+
+{
+  const data = {
+    value: " 1 9 90 /0 7 /0 1  ",
+    format: "yyyy/mm/dd",
+  };
+
+  const expectedFormat = "dd/mm/yyyy";
+  const expected = "01/07/1990";
+  const result = DateUtil.formatString(data.value, data.format, expectedFormat);
+
+  deepStrictEqual(result, expected);
+}
+
+{
+  const data = {
+    value: " 1990/07/01",
+    format: "yyyy/mm/dd",
+  };
+
+  const expectedFormat = "yyyy-mm-dd";
+  const expected = "1990-07-01";
+  const result = DateUtil.formatString(data.value, data.format, expectedFormat);
+
+  deepStrictEqual(result, expected);
+}
+
+{
+  const data = {
+    value: "01/07/1990",
+    format: "dd/mm/yyyy",
+  };
+
+  const expectedFormat = "yyyy-mm-dd";
+  const expected = "1990-07-01";
+  const result = DateUtil.formatString(data.value, data.format, expectedFormat);
+
   deepStrictEqual(result, expected);
 }
