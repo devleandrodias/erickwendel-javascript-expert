@@ -1,0 +1,17 @@
+nvm --version
+
+nvm install --lts
+
+nvm install 19
+
+nvm list
+
+nvm use 18
+
+nvm alias default 18
+
+.nvmrc
+
+nvm use => .nvmrc
+
+node -v > .nvmrc
