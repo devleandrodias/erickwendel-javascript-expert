@@ -1,0 +1,3 @@
+# curl "http://localhost:3000/joinImages?image=https://assets.stickpng.com/images/5eb95c9517f3c600044a2911.png&background=https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701391509.jpg"
+
+autocannon --renderStatusCodes -c500 "http://localhost:3000/joinImages?image=https://assets.stickpng.com/images/5eb95c9517f3c600044a2911.png&background=https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701391509.jpg"
